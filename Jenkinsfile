@@ -19,7 +19,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh './main/output'
+                sh './mai/output'
             }
         }
 
