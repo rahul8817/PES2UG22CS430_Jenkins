@@ -13,13 +13,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'g++ main/hello.cpp -o main/output'
+                sh 'g++ --invalid-flag main/hello.cpp -o main/output'
             }
         }
 
         stage('Test') {
             steps {
-                sh './mai/output'
+                sh './main/output'
             }
         }
 
